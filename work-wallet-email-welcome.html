@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkWalletEmail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .text {
+            text-align: center;
+        }
+        .email-sub-tempate {
+            width: 100%;
+            max-width: 970px;
+            margin: auto;
+            background-color: #FAFAFA;
+            margin-top: 18px;
+        }
+        .maximizing-the-width {
+            max-width: 620px;
+            margin: auto;
+            padding-top: 44px;
+            padding-bottom: 68px;
+            
+        }
+        .justify {
+            text-align: center;
+            text-justify:distribute-all-lines;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+        }
+
+        .innerText {
+            padding-left: 40px;
+            padding-right: 40px;
+            font-size: 12pt;
+            font-weight: 400;
+        }
+
+        .outerText {
+            font-size: 24pt;
+            font-weight: 300;
+        }
+
+        .footerText{
+            padding:0px 40px 0px 40px;
+        }
+        table {
+            border-collapse: separate;
+            font-weight: 400;
+        }
+
+        #secondRow {
+            height: 40px;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        footer {
+
+            
+            width: 100%;
+            background-image: url("Images/work-wallet-emailer-welcome-footerBG.png");
+            color: black;
+            text-align: center;
+            font-size: 8pt;
+            padding-bottom: 25px;
+            margin-bottom: 0px 0px 0px 0px;
+            font-weight: 400;
+        }
+
+        body {
+            font-family: lato;
+            margin: 0px 0px 0px 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Emial-tempplate-0main-body ">
+        <div class="email-sub-tempate ">
+            <div class="maximizing-the-width ">
+                <div style="background-color: white;">
+                <header>
+                    <img style="margin:20px 20px 0px 20px;" src="Images/work-wallet-emailer-welcome-header-logo.png">
+                    <br>
+                    <img style="margin:0px 0px 0px 10px;width:98%"
+                        src="Images/work-wallet-emailer-welcome-header-border-shadow.png">
+                </header>
+                <p class="text" style="font-size:36pt;font-weight:300; margin-top:0px"><i>Awesome, Rahul!</i></p>
+
+                <img class="center" src="Images/work-wallet-emailer-welcome-heroimage.png " style="width:350px">
+
+                <div style="margin-left:60px;margin-right:60px;">
+                    <p class="text " style="font-size:12pt;font-weight:400 ">You have the first step towards bringing
+                        trust and authenticity to
+                        your work profile,
+                        increasing your chances of being hired by organizations that <i>make a difference.</i></p>
+                </div>
+                <br><br>
+                <div class="button-template ">
+                    <div style="text-align:center; ">
+                        <a href="{{WORKWALLET_LINK}}/offer/otp/{{OTP}} ">
+                            <img style=" width: 130px; height: 30%; object-fit: contain; "
+                                src="Images/work-wallet-emailer-welcome-access-button.png" />
+                        </a>
+                    </div>
+                </div>
+                <br> <br>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="text outerText">
+                                <i>It's all here.</i>
+                            </div>
+                            <hr style="width:50px;height:3px;background-color:#00C4AC;border:0px;">
+                        </td>
+
+                        <td>
+                            <div class="text outerText">
+                                <i>You Own It.</i>
+                            </div>
+                            <hr style="width:50px;height:3px;background-color:#00C4AC;border:0px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="justify innerText">
+                                All your professional stuff is right here your documents, achivements, commendations,
+                                career
+                                transactions, and more.
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="justify innerText">
+                                You are the master of your WorkWallet. Every interaction will add more elements to your
+                                WorkWallet, either by a contributor or yourself.
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr id="secondRow">
+                        <td colspan="2"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="text outerText">
+                                <i>It's Secure.</i>
+                            </div>
+                            <hr style="width:50px;height:3px;background-color:#00C4AC;border:0px;">
+                        </td>
+
+                        <td>
+                            <div class="text outerText">
+                                <i>Don't Mess it up.</i>
+                            </div>
+                            <hr style="width:50px;height:3px;background-color:#00C4AC;border:0px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="justify innerText">
+                                Every transaction and elements are recorded and stored in a secure server. Access to your
+                                WorkWallet elements is by your consent alone, always.
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="justify innerText">
+                                WorkWallet helps to keep your professional life safe and clean. So keep it shining and
+                                up-to-date.
+
+                            </div>
+                        </td>
+                    </tr>
+
+
+                </table>
+
+                <br> <br> 
+
+
+                <div class="button-template ">
+                    <div style="text-align:center; ">
+                        <a href="{{WORKWALLET_LINK}}/offer/otp/{{OTP}} ">
+                            <img style=" width: 130px; height: 30%; object-fit: contain; "
+                                src="Images/work-wallet-emailer-welcome-access-button.png" />
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <p class="text" style="font-size: 12pt;font-weight: 400;">Go ahead and access your latest job offers
+                    from your WorkWallet</p>
+
+                <br>
+                <footer>
+                    <br>
+                    <img class="center footerText" style="width:200px" src="Images/work-wallet-emailer-welcome-footer-logo.png">
+                    <br>
+                    <p class="text footerText">You are getting this email as you have registered for a WorkWallet Account or been a
+                        part of the
+                        StaySigned Platform in the past.</p>
+                    <br>
+                    <p class="text footerText">310/03,1st Cross, Cambridge Layout, Ulsoor, Bangalore, India-560 008 </p>
+                    <p class="text footerText">hello@staysigned.com</p>
+                    <br>
+                    <p class="text footerText">You can Unsubscribe <a href="" style="color:black;"> <b>here</b></a>. Open this in a Browser <a style="color:black;"
+                            href=""><b>here</b></a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
