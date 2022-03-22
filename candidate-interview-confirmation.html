@@ -24,7 +24,7 @@
         }
 
         .maximizing-the-width {
-            max-width: 620px;
+            max-width: 750px;
             margin: auto;
             padding-top: 44px;
             padding-bottom: 68px;
@@ -43,18 +43,45 @@
             width: 80px;
         }
 
+        .outerText {
+            font-size: 12pt;
+            color: #4D4D4D;
+            font-weight: 400;
+        }
 
+        .innerText {
+            font-size: 12pt;
+            color: #000000;
+            font-weight: 300;
+        }
 
         .footerText {
             padding: 0px 40px 0px 40px;
         }
-        
-        .innerTable{
-            margin:30px 0px 50px 25px;
+
+        .innerTable {
+            margin: 30px 0px 50px 25px;
             border-collapse: separate;
-            border-spacing: 0px 20px;
+            border-spacing: 0px 0px;
         }
 
+        .firstTd {
+            padding:0px 25px 0px 25px;
+            border-right: 2px solid lightgray;
+            width: 50%;
+        }
+
+        .smallImg {
+            
+        }
+
+        .textTd{
+            padding:20px;
+        }
+
+        .outerTable{
+            border-collapse: collapse;
+        }
         table {
 
             font-weight: 400;
@@ -64,23 +91,21 @@
             height: 40px;
         }
 
-        a{
-            color:white;
+        a {
+            color: white;
         }
-        td {
-            vertical-align: center;
-        }
+
 
         footer {
 
 
             width: 100%;
-            background-color: #FAFAFA;
+            background-color: #eeeeee;
             color: black;
             text-align: center;
             font-size: 8pt;
             padding-bottom: 0px;
-            margin-bottom: 0px ;
+            margin-bottom: 0px;
             font-weight: 400;
         }
 
@@ -89,17 +114,10 @@
             margin: 0px 0px 0px 0px;
 
         }
-        .firstTd{
-            border-right: 2px solid lightgray;
+
+        p {
+            margin: 0px 0px 0px 0px;
         }
-        .smallImg{
-            
-            margin-right: 13px;
-        }
-        p{
-           margin:0px;
-        }
-        
     </style>
 </head>
 
@@ -110,81 +128,95 @@
                 <div style="background-color: white;">
                     <header>
                         <br>
-                        <img style="" class="center"
-                            src="Images/sample.png">
+                        <img class="center" src="Images/apple.png">
                         <br>
                         <img style="margin:0px 0px 0px 10px;width:98%"
                             src="Images/work-wallet-emailer-welcome-header-border-shadow.png">
                     </header>
                     <br>
-                    <br>
-                    <br>
-                    <table>
+                    
+                    
+                    <table class="outerTable" style="width: 100%;">
                         <tr>
-                            <td class="firstTd">
-                                <P>
-                                    <i>Awesome!</i>
-                                </P>
-                                <p>
-                                    Your Interview with BrandName is Confirmed.
+                            <td class="firstTd" >
+                                <p style="font-size: 42pt;">
+                                    <b><i>Awesome!</i></b>
+                                </p>
+                                <p style="font-size: 24pt;color: #1A1A1A;font-weight: 300 ;">
+                                    Your Interview with <br> BrandName <br> is Confirmed.
                                 </p>
                             </td>
 
-                            <td>
-                                <table class="innerTable">
-                                    <div>
-                                        <td><img class="smallImg" src="Images/staysigned-candidate-interview-confirmation-04.png"></td>
-                                        <td>
-                                            <p>Event Type</p>
-                                            <p>Introduction & Technical Interview</p>
-                                        </td>
-                                    </div>
-                                    <tr>
-                                        <td><img class="smallImg" src="Images/staysigned-candidate-interview-confirmation-03.png"></td>
-                                        <td>
-                                            <p>Invited By</p>
-                                            <p>Sneha</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="smallImg" src="Images/staysigned-candidate-interview-confirmation-02.png"></td>
-                                        <td>
-                                            <p>Invitee Email</p>
-                                            <p>sneha@xyzcompany.com</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="smallImg" src="Images/staysigned-candidate-interview-confirmation-05.png"></td>
-                                        <td>
-                                            <p>Event Schedule</p>
-                                            <p>23 March 2022, 3 PM</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="smallImg" src="Images/staysigned-candidate-interview-confirmation-06.png"></td>
-                                        <td>
-                                            <p>Event Location</p>
-                                            <p>Google Meet Event</p>
-                                        </td>
-                                        
-                                    </tr>
+
+                            <td style="width: 50%;">
+                                <table class="innerTable" >
+                                    <tbody style="vertical-align: middle;">
+                                        <tr>
+                                            <td><img class="smallImg"
+                                                    src="Images/staysigned-candidate-interview-confirmation-04.png">
+                                            </td>
+                                            <td class="textTd">
+                                                <p class="outerText"> Event Type</p>
+                                                <p class="innerText">Introduction & Technical Interview</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="smallImg"
+                                                    src="Images/staysigned-candidate-interview-confirmation-03.png">
+                                            </td>
+                                            <td class="textTd">
+                                                <p class="outerText">Invited By</p>
+                                                <p class="innerText">Sneha</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="smallImg"
+                                                    src="Images/staysigned-candidate-interview-confirmation-02.png">
+                                            </td>
+                                            <td class="textTd">
+                                                <p class="outerText">Invitee Email</p>
+                                                <p class="innerText">sneha@xyzcompany.com</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="smallImg"
+                                                    src="Images/staysigned-candidate-interview-confirmation-05.png">
+                                            </td>
+                                            <td class="textTd">
+                                                <p class="outerText">Event Schedule</p>
+                                                <p class="innerText">23 March 2022, 3 PM</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="smallImg"
+                                                    src="Images/staysigned-candidate-interview-confirmation-06.png">
+                                            </td>
+                                            <td class="textTd">
+                                                <p class="outerText">Event Location</p>
+                                                <p class="innerText">Google Meet Event</p>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </td>
                         </tr>
                     </table>
+                
 
 
 
-
-                    <br> 
                     <br>
                     <br>
-                    <br>
+                    
                     <footer>
                         <br>
                         <img style="width:150px" src="Images/staysigned-candidate-interview-confirmation-07.png">
-                        <div style="background-color: lightskyblue;color:white;">
-                            <p style="text-align:left;padding:10px">Make Candidate Onboarding         Predictable  <span style="float:right"><a href="">Terms & Conditions </a>| <a href="">Privacy Policy </a>| <a href="">Unsubscribe</a></span></p>
+                        <div style="background-color: #1B447F;color:#3db5da;">
+                            <p style="text-align:left;padding:10px">Make Candidate Onboarding Predictable <span
+                                    style="float:right;"><a href="" style="color:#3db5da;">Terms & Conditions </a>| <a
+                                        href="" style="color:#3db5da;">Privacy Policy </a>| <a href=""
+                                        style="color:#3db5da;">Unsubscribe</a></span></p>
                         </div>
                     </footer>
                 </div>
